@@ -4,31 +4,14 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Gianmaria-Friendly</title>
-  <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;600&family=Quicksand:wght@400;500&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
 </head>
 <body>
-  <header>
-    <h1>Gianmaria-Friendly</h1>
-    <p>Scopri subito se un alimento è adatto a Gianmaria!</p>
-  </header>
-  <main>
-    <div class="search-container">
-      <input 
-        type="text" 
-        id="search" 
-        placeholder="Cerca un alimento..." 
-        oninput="showSuggestions(this.value)"
-      >
-      <ul id="suggestions" class="hidden"></ul>
-    </div>
-    <div id="result" class="hidden">
-      <!-- Risultato dinamico -->
-    </div>
-  </main>
-  <footer>
-    <p>Made with ❤️ for Giulio</p>
-  </footer>
+  <div id="app">
+    <!-- L'app sarà gestita dinamicamente con JS -->
+  </div>
+  <script src="data.js"></script>
   <script src="app.js"></script>
 </body>
 </html>
