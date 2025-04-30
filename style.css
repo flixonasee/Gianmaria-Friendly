@@ -1,94 +1,68 @@
-/* Color Palette: #f0ff83, #e4a0c7, #64b6dc, #f71414, #020887 */
 body {
-  font-family: 'Fredoka', 'Quicksand', sans-serif;
-  background-color: #f0ff83;
-  color: #020887;
   margin: 0;
-  padding: 0;
-}
-
-header {
-  text-align: center;
-  padding: 20px;
-  background-color: #64b6dc;
-  color: #fff;
-}
-
-header h1 {
-  font-size: 2.5rem;
-  margin-bottom: 10px;
-}
-
-header p {
-  font-size: 1.2rem;
-}
-
-main {
-  padding: 20px;
-}
-
-.search-container {
+  font-family: 'Poppins', sans-serif;
+  background-color: #F9F9F9;
+  color: #222222;
   display: flex;
-  flex-direction: column;
+  justify-content: center;
   align-items: center;
+  height: 100vh;
 }
 
-#search {
+#app {
+  text-align: center;
   width: 90%;
-  max-width: 400px;
-  padding: 10px;
-  border: 2px solid #64b6dc;
-  border-radius: 5px;
+  max-width: 600px;
+}
+
+h1 {
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+}
+
+button {
+  display: block;
+  width: 100%;
+  max-width: 300px;
+  margin: 10px auto;
+  padding: 15px;
   font-size: 1rem;
-}
-
-#suggestions {
-  width: 90%;
-  max-width: 400px;
-  margin-top: 10px;
-  padding: 0;
-  list-style: none;
-  border: 1px solid #64b6dc;
-  border-radius: 5px;
-  background-color: #fff;
-}
-
-#suggestions li {
-  padding: 10px;
+  border: none;
+  border-radius: 12px;
   cursor: pointer;
+  transition: background-color 0.3s ease;
 }
 
-#suggestions li:hover {
-  background-color: #e4a0c7;
-  color: #fff;
+button.positive {
+  background-color: #4CAF50;
+  color: white;
+}
+
+button.negative {
+  background-color: #F44336;
+  color: white;
+}
+
+button.neutral {
+  background-color: #FFC107;
+  color: white;
+}
+
+button:hover {
+  opacity: 0.9;
 }
 
 .hidden {
   display: none;
 }
 
-#result {
-  margin-top: 20px;
-  padding: 20px;
-  border: 2px solid #64b6dc;
-  border-radius: 5px;
-  background-color: #fff;
-  max-width: 400px;
-  margin-left: auto;
-  margin-right: auto;
-}
+@media (max-width: 600px) {
+  h1 {
+    font-size: 1.5rem;
+  }
 
-#result p {
-  margin: 0;
-  font-size: 1.2rem;
-}
-
-footer {
-  text-align: center;
-  padding: 10px;
-  background-color: #020887;
-  color: #fff;
-  position: fixed;
-  bottom: 0;
-  width: 100%;
+  button {
+    font-size: 0.9rem;
+    padding: 12px;
+  }
 }
