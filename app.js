@@ -1,10 +1,11 @@
 const alimenti = [
-  { nome: "Parmigiano", status: "✅", note: "" },
-  { nome: "Grana", status: "✅", note: "" },
-  { nome: "Formaggio (altro)", status: "🤷", note: "Solo se sciolto" },
-  { nome: "Melanzane", status: "❌", note: "Mai e poi mai" },
-  { nome: "Pizza", status: "🤷", note: "Solo senza pezzi di cipolla" },
+  { nome: "Parmigiano", status: "è Gianmaria-friendly", note: "" },
+  { nome: "Grana", status: "è Gianmaria-friendly", note: "" },
+  { nome: "Formaggio (altro)", status: "non gli fa impazzire", note: "Solo se sciolto" },
+  { nome: "Melanzane", status: "non è Gianmaria-friendly", note: "Mai e poi mai" },
+  { nome: "Pizza", status: "non gli fa impazzire", note: "Solo senza pezzi di cipolla" },
 ];
+
 
 function showSuggestions(query) {
   const suggestionsBox = document.getElementById("suggestions");
