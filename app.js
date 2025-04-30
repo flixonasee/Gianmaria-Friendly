@@ -45,9 +45,8 @@ function searchAlimento(query) {
 
   if (alimento) {
     resultBox.innerHTML = `
-      <p><strong>Nome:</strong> ${alimento.nome}</p>
-      <p><strong>Stato:</strong> ${alimento.status}</p>
-      <p><strong>Note:</strong> ${alimento.note || "Nessuna"}</p>
+      <p> ${alimento.nome} ${alimento.status} </p>
+      <p> ${alimento.note || "Nessuna"}</p>
     `;
   } else {
     resultBox.innerHTML = `
