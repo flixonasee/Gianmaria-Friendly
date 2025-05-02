@@ -19,7 +19,7 @@ body {
   font-family: 'GrafienRegular', sans-serif; /* Apply GrafienRegular globally */
   margin: 0;
   padding: 0;
-  background-color: #ffc400;
+  background-color: #a5ceda;
   color: #1A1A1A; /* Dark text color */
   text-align: center;
   display: flex;
@@ -82,5 +82,5 @@ body {
 }
 
 .category-button:hover {
-  background: #E65A50; /* Slightly darker coral */
+  background: #FFEB3B; /* Slightly darker coral */
 }
