@@ -94,11 +94,12 @@ function showQuestion(question, options) {
 
 // Show result
 function showResult(resultMessage) {
+  console.log("Result message:", resultMessage); // Debugging: Log the result message
   historyStack.push({ screen: 'Risultato' });
   setBreadcrumbTitle('Risultato');
   updateGoBackVisibility();
 
-  // Check if the result is successful ("✅ È Gianmaria-friendly!")
+  // Check if the result is a success (contains "✅")
   const isSuccess = resultMessage.includes('✅');
   const animationHTML = isSuccess
     ? `<dotlottie-player src="https://lottie.host/e964d2a1-4e97-46bf-b237-1515d9ccf263/1LqL8L24Z7.lottie" background="transparent" speed="1" style="width: 300px; height: 300px" loop autoplay></dotlottie-player>`
