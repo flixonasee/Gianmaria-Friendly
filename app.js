@@ -102,8 +102,8 @@ function showResult(resultMessage) {
   // Check if the result is successful or negative
   const isSuccess = resultMessage.includes('✅');
   const animationHTML = isSuccess
-    ? `<dotlottie-player src="https://lottie.host/ffcea859-3e7b-4626-b70a-8083a3e8170f/qIng6jeg9Z.lottie" background="transparent" speed="1" style="width: 300px; height: 300px" loop autoplay></dotlottie-player>`
-    : `<dotlottie-player src="https://lottie.host/20e303c4-3ac6-4e3a-bc72-d25c4c06f576/oq4qT8MmH3.lottie" background="transparent" speed="1" style="width: 300px; height: 300px" loop autoplay></dotlottie-player>`;
+    ? `<dotlottie-player src="https://lottie.host/ffcea859-3e7b-4626-b70a-8083a3e8170f/qIng6jeg9Z.lottie" background="transparent" speed="1" style="width: 300px; height: 300px"></dotlottie-player>`
+    : `<dotlottie-player src="https://lottie.host/20e303c4-3ac6-4e3a-bc72-d25c4c06f576/oq4qT8MmH3.lottie" background="transparent" speed="1" style="width: 300px; height: 300px"></dotlottie-player>`;
 
   document.getElementById('content').innerHTML = `
     ${animationHTML}
