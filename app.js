@@ -99,11 +99,11 @@ function showResult(resultMessage) {
   setBreadcrumbTitle('Risultato');
   updateGoBackVisibility();
 
-  // Check if the result is a success (contains "✅")
+  // Check if the result is successful or negative
   const isSuccess = resultMessage.includes('✅');
   const animationHTML = isSuccess
     ? `<dotlottie-player src="https://lottie.host/e964d2a1-4e97-46bf-b237-1515d9ccf263/1LqL8L24Z7.lottie" background="transparent" speed="1" style="width: 300px; height: 300px" loop autoplay></dotlottie-player>`
-    : '';
+    : `<dotlottie-player src="https://lottie.host/20e303c4-3ac6-4e3a-bc72-d25c4c06f576/oq4qT8MmH3.lottie" background="transparent" speed="1" style="width: 300px; height: 300px" loop autoplay></dotlottie-player>`;
 
   document.getElementById('content').innerHTML = `
     ${animationHTML}
