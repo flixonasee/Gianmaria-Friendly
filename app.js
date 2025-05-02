@@ -98,7 +98,14 @@ function showResult(resultMessage) {
   setBreadcrumbTitle('Risultato');
   updateGoBackVisibility();
 
+  // Check if the result is successful ("✅ È Gianmaria-friendly!")
+  const isSuccess = resultMessage.includes('✅');
+  const animationHTML = isSuccess
+    ? `<dotlottie-player src="https://lottie.host/e964d2a1-4e97-46bf-b237-1515d9ccf263/1LqL8L24Z7.lottie" background="transparent" speed="1" style="width: 300px; height: 300px" loop autoplay></dotlottie-player>`
+    : '';
+
   document.getElementById('content').innerHTML = `
+    ${animationHTML}
     <h2 class="result">${resultMessage}</h2>
     <button class="category-button" onclick="showLandingPage()">🔄 Ricomincia</button>
   `;
