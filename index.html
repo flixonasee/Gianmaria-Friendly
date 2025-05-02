@@ -7,8 +7,17 @@
   <link rel="stylesheet" href="styles.css">
   <script src="https://unpkg.com/@dotlottie/player-component@2.7.12/dist/dotlottie-player.mjs" type="module"></script>
 </head>
-<body>
-  <div class="snowflakes">
+<body>    
+  <div id="app">
+    <!-- Breadcrumb Header -->
+    <header id="breadcrumb-header" style="display: none;">
+      <button id="ricomincia-button" class="breadcrumb-back-button" onclick="goBack()">&lt;</button>
+      <span id="breadcrumb-title" class="breadcrumb-title">Home</span>
+    </header>
+    <!-- Main App Content -->
+    <main id="content">
+      <header id="landing-header">
+        <div class="snowflakes">
   <div class="snowflake">
   🧀
   </div>
@@ -31,16 +40,6 @@
   🥤
   </div>
 </div>
-    
-  <div id="app">
-    <!-- Breadcrumb Header -->
-    <header id="breadcrumb-header" style="display: none;">
-      <button id="ricomincia-button" class="breadcrumb-back-button" onclick="goBack()">&lt;</button>
-      <span id="breadcrumb-title" class="breadcrumb-title">Home</span>
-    </header>
-    <!-- Main App Content -->
-    <main id="content">
-      <header id="landing-header">
         <!-- Logo -->
         <div class="logo">
           <img src="https://github.com/flixonasee/gfriendly/blob/a24c81f9ccf4d4fa2336e50d78c4f6d6abeae3fd/logo.svg?raw=true" alt="Gianmaria-Friendly Logo">
