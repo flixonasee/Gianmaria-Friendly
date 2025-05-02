@@ -1,68 +1,86 @@
+/* Import GrafienRegular Font (Global Font) */
+@font-face {
+  font-family: 'GrafienRegular';
+  src: url('http://flixonasee.github.io/gfriendly/Font/GrafienRegular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* Import Gfriend Font (Button Font) */
+@font-face {
+  font-family: 'Gfriend';
+  src: url('http://flixonasee.github.io/gfriendly/Font/Gfriend.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* General Reset */
 body {
+  font-family: 'GrafienRegular', sans-serif; /* Apply GrafienRegular globally */
   margin: 0;
-  font-family: 'Poppins', sans-serif;
-  background-color: #F9F9F9;
-  color: #222222;
+  padding: 0;
+  background-color: #FDFBF7; /* Beige background */
+  color: #1A1A1A; /* Dark text color */
+  text-align: center;
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh;
+  min-height: 100vh;
 }
 
-#app {
+/* Logo Styling */
+.logo {
+  max-width: 400px; /* Limit the logo's width */
+  margin: 0 auto; /* Center the logo */
+  margin-top: 40px; /* Add space above the logo */
+}
+
+.logo img {
+  width: 100%; /* Ensure the logo scales within its container */
+  height: auto; /* Maintain the aspect ratio */
+}
+
+/* Header Typography */
+.title {
+  font-size: 36px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: #1A1A1A; /* Dark text color */
+}
+
+/* Landing Page Layout */
+#landing-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Cover Image Styling */
+.cover-img img {
+  width: 260px; /* Adjusted width for the cover image */
+  height: auto; /* Automatically adjust height to maintain aspect ratio */
+  margin: 20px 0;
+  border-radius: 10px; /* Optional: Add rounded corners */
+}
+
+/* Button */
+.category-button {
+  padding: 12px;
+  border-radius: 30px; /* Rounded corners */
+  background: #FF6F61; /* Coral color */
+  color: white;
+  font-size: 18px;
+  font-family: 'Gfriend', sans-serif; /* Apply Gfriend font to buttons */
+  font-weight: bold;
   text-align: center;
-  width: 90%;
-  max-width: 600px;
-}
-
-h1 {
-  font-size: 1.8rem;
-  margin-bottom: 1rem;
-}
-
-button {
-  display: block;
-  width: 100%;
-  max-width: 300px;
-  margin: 10px auto;
-  padding: 15px;
-  font-size: 1rem;
+  text-transform: uppercase;
   border: none;
-  border-radius: 12px;
   cursor: pointer;
-  transition: background-color 0.3s ease;
+  margin-top: 20px;
+  width: 200px;
+  transition: background 0.2s ease-in-out;
 }
 
-button.positive {
-  background-color: #4CAF50;
-  color: white;
-}
-
-button.negative {
-  background-color: #F44336;
-  color: white;
-}
-
-button.neutral {
-  background-color: #FFC107;
-  color: white;
-}
-
-button:hover {
-  opacity: 0.9;
-}
-
-.hidden {
-  display: none;
-}
-
-@media (max-width: 600px) {
-  h1 {
-    font-size: 1.5rem;
-  }
-
-  button {
-    font-size: 0.9rem;
-    padding: 12px;
-  }
+.category-button:hover {
+  background: #E65A50; /* Slightly darker coral */
 }
